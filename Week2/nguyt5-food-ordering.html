@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Honey Burger - Order Form</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #fff5f5, #fffbe6);
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      border: 2px solid #ffe5e5;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 0.3rem auto;
+      width: 80px;
+      height: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #b22222;
+      font-size: 3rem;
+      margin: 0.2rem 0 1rem 0;
+      font-family: 'Pacifico', cursive;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 1rem;
+      color: #444;
+    }
+
+    .item-row {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .item-row select {
+      flex: 2;
+    }
+
+    .item-row input {
+      flex: 1;
+      padding: 0.7rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    select, input, button {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 0.3rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    select:focus, input:focus {
+      border-color: #ff7a7a;
+      box-shadow: 0 0 5px rgba(255,122,122,0.5);
+      outline: none;
+    }
+
+    button {
+      background: linear-gradient(135deg, #ff4d4d, #b22222);
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      margin-top: 1.5rem;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #b22222, #800000);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    .thank-you {
+      font-family: 'Monaco', cursive;
+      color: darkgreen;
+      text-align: center;
+      margin-top: 1.5rem;
+      font-size: 1.3rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://img.icons8.com/color/96/hamburger.png" alt="a tasty looking burger" class="logo" />
+    <h1>Honey Burger</h1>
+    <form id="orderForm">
+      <label for="fullName">Your Name</label>
+      <input id="fullName" name="fullName" type="text" placeholder="e.g., Alex Burgerfan" required />
+
+      <label for="phone">Phone Number</label>
+      <input id="phone" name="phone" type="tel" placeholder="(555) 555-1234" required />
+
+      <label for="burger">Burger</label>
+      <div class="item-row">
+        <select id="burger" name="burger">
+          <option value="" disabled selected>Select a burger…</option>
+          <option>Classic Burger - $5.99</option>
+          <option>Cheeseburger - $6.49</option>
+          <option>Double Cheeseburger - $7.99</option>
+          <option>Veggie Burger - $6.29</option>
+          <option>Chicken Sandwich - $6.79</option>
+          <option>Spicy Chicken Sandwich - $7.19</option>
+        </select>
+        <input type="number" name="burgerQty" min="0" value="1" />
+      </div>
+
+      <label for="side">Side</label>
+      <div class="item-row">
+        <select id="side" name="side">
+          <option value="" disabled selected>Select a side…</option>
+          <option>Fries - $2.49</option>
+          <option>Sweet Potato Fries - $2.99</option>
+          <option>Onion Rings - $3.29</option>
+        </select>
+        <input type="number" name="sideQty" min="0" value="1" />
+      </div>
+
+      <label for="drink">Drink</label>
+      <div class="item-row">
+        <select id="drink" name="drink">
+          <option value="" disabled selected>Select a drink…</option>
+          <option>Soda - $1.99</option>
+          <option>Milkshake - $3.99</option>
+          <option>Iced Tea - $2.19</option>
+        </select>
+        <input type="number" name="drinkQty" min="0" value="1" />
+      </div>
+
+      <label for="sauce">Sauce</label>
+      <select id="sauce" name="sauce">
+        <option value="" disabled selected>Select a sauce…</option>
+        <option>Ketchup</option>
+        <option>Mustard</option>
+        <option>BBQ</option>
+        <option>Ranch</option>
+        <option>Honey Mustard</option>
+      </select>
+
+      <button type="submit">Place Order</button>
+    </form>
+
+    <footer>
+      <p>Your order will be ready within 15 minutes!</p>
+      <hr>
+    </footer>
+    <p class="thank-you">THANK YOU FOR YOUR SUPPORT!</p>
+  </div>
+</body>
+</html>

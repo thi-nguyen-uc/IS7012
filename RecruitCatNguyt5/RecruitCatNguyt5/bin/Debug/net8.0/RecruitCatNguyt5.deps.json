@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "RecruitCatNguyt5/1.0.0": {
+        "runtime": {
+          "RecruitCatNguyt5.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RecruitCatNguyt5/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

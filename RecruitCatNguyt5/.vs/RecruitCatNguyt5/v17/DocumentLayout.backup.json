@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\thidn\\Desktop\\Thi Nguyen\\UC MSIS\\IS7012\\RecruitCatNguyt5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C9898C43-8AA9-4468-8217-65BB3D66F045}|RecruitCatNguyt5\\RecruitCatNguyt5.csproj|c:\\users\\thidn\\desktop\\thi nguyen\\uc msis\\is7012\\recruitcatnguyt5\\recruitcatnguyt5\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9898C43-8AA9-4468-8217-65BB3D66F045}|RecruitCatNguyt5\\RecruitCatNguyt5.csproj|solutionrelative:recruitcatnguyt5\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9898C43-8AA9-4468-8217-65BB3D66F045}|RecruitCatNguyt5\\RecruitCatNguyt5.csproj|c:\\users\\thidn\\desktop\\thi nguyen\\uc msis\\is7012\\recruitcatnguyt5\\recruitcatnguyt5\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9898C43-8AA9-4468-8217-65BB3D66F045}|RecruitCatNguyt5\\RecruitCatNguyt5.csproj|solutionrelative:recruitcatnguyt5\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9898C43-8AA9-4468-8217-65BB3D66F045}|RecruitCatNguyt5\\RecruitCatNguyt5.csproj|c:\\users\\thidn\\desktop\\thi nguyen\\uc msis\\is7012\\recruitcatnguyt5\\recruitcatnguyt5\\pages\\ourteam.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9898C43-8AA9-4468-8217-65BB3D66F045}|RecruitCatNguyt5\\RecruitCatNguyt5.csproj|solutionrelative:recruitcatnguyt5\\pages\\ourteam.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OurTeam.cshtml",
+              "DocumentMoniker": "C:\\Users\\thidn\\Desktop\\Thi Nguyen\\UC MSIS\\IS7012\\RecruitCatNguyt5\\RecruitCatNguyt5\\Pages\\OurTeam.cshtml",
+              "RelativeDocumentMoniker": "RecruitCatNguyt5\\Pages\\OurTeam.cshtml",
+              "ToolTip": "C:\\Users\\thidn\\Desktop\\Thi Nguyen\\UC MSIS\\IS7012\\RecruitCatNguyt5\\RecruitCatNguyt5\\Pages\\OurTeam.cshtml",
+              "RelativeToolTip": "RecruitCatNguyt5\\Pages\\OurTeam.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-07T07:45:58.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\thidn\\Desktop\\Thi Nguyen\\UC MSIS\\IS7012\\RecruitCatNguyt5\\RecruitCatNguyt5\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "RecruitCatNguyt5\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\thidn\\Desktop\\Thi Nguyen\\UC MSIS\\IS7012\\RecruitCatNguyt5\\RecruitCatNguyt5\\Pages\\Index.cshtml",
+              "RelativeToolTip": "RecruitCatNguyt5\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAF0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-07T07:05:12.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\thidn\\Desktop\\Thi Nguyen\\UC MSIS\\IS7012\\RecruitCatNguyt5\\RecruitCatNguyt5\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "RecruitCatNguyt5\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\thidn\\Desktop\\Thi Nguyen\\UC MSIS\\IS7012\\RecruitCatNguyt5\\RecruitCatNguyt5\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "RecruitCatNguyt5\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-07T07:03:56.005Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
