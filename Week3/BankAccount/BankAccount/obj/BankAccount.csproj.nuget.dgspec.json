@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thidn\\Desktop\\Thi Nguyen\\UC MSIS\\IS7012\\Week2\\BankAccount\\BankAccount\\BankAccount.csproj": {}
+    "C:\\Users\\thidn\\Desktop\\Thi Nguyen\\UC MSIS\\IS7012\\Week3\\BankAccount\\BankAccount\\BankAccount.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thidn\\Desktop\\Thi Nguyen\\UC MSIS\\IS7012\\Week2\\BankAccount\\BankAccount\\BankAccount.csproj": {
+    "C:\\Users\\thidn\\Desktop\\Thi Nguyen\\UC MSIS\\IS7012\\Week3\\BankAccount\\BankAccount\\BankAccount.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thidn\\Desktop\\Thi Nguyen\\UC MSIS\\IS7012\\Week2\\BankAccount\\BankAccount\\BankAccount.csproj",
+        "projectUniqueName": "C:\\Users\\thidn\\Desktop\\Thi Nguyen\\UC MSIS\\IS7012\\Week3\\BankAccount\\BankAccount\\BankAccount.csproj",
         "projectName": "BankAccount",
-        "projectPath": "C:\\Users\\thidn\\Desktop\\Thi Nguyen\\UC MSIS\\IS7012\\Week2\\BankAccount\\BankAccount\\BankAccount.csproj",
+        "projectPath": "C:\\Users\\thidn\\Desktop\\Thi Nguyen\\UC MSIS\\IS7012\\Week3\\BankAccount\\BankAccount\\BankAccount.csproj",
         "packagesPath": "C:\\Users\\thidn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thidn\\Desktop\\Thi Nguyen\\UC MSIS\\IS7012\\Week2\\BankAccount\\BankAccount\\obj\\",
+        "outputPath": "C:\\Users\\thidn\\Desktop\\Thi Nguyen\\UC MSIS\\IS7012\\Week3\\BankAccount\\BankAccount\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
