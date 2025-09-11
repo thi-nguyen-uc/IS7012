@@ -22,8 +22,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -34,8 +38,7 @@
               "RelativeToolTip": "RecruitCatNguyt5\\Pages\\OurTeam.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-07T07:45:58.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T07:45:58.482Z"
             },
             {
               "$type": "Document",
@@ -58,7 +61,7 @@
               "RelativeDocumentMoniker": "RecruitCatNguyt5\\Pages\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\thidn\\Desktop\\Thi Nguyen\\UC MSIS\\IS7012\\RecruitCatNguyt5\\RecruitCatNguyt5\\Pages\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "RecruitCatNguyt5\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGoAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-07T07:03:56.005Z",
               "EditorCaption": ""

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecruitCatNguyt5")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac66b5f521dd7b7910ee576f359192f84c893554")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+247e255f5a1e3228fb64382152c6b3ec38a392ed")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecruitCatNguyt5")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecruitCatNguyt5")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
