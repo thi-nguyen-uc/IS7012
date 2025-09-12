@@ -1,7 +1,12 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using BankAccount.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<BankAccountContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("BankAccountContext") ?? throw new InvalidOperationException("Connection string 'BankAccountContext' not found.")));
 
 var app = builder.Build();
 
