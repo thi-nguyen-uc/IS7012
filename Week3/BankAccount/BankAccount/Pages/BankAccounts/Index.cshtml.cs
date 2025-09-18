@@ -19,7 +19,7 @@ namespace BankAccount.Pages.BankAccounts
             _context = context;
         }
 
-        public IList<BankAccount> BankAccount { get;set; } = default!;
+        public IList<Models.BankAccount> BankAccount { get;set; } = default!;
 
         public async Task OnGetAsync()
         {

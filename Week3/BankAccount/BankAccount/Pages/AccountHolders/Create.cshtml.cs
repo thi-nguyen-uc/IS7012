@@ -25,7 +25,7 @@ namespace BankAccount.Pages.AccountHolders
         }
 
         [BindProperty]
-        public AccountHolder AccountHolder { get; set; } = default!;
+        public Models.AccountHolder AccountHolder { get; set; } = default!;
 
         // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()

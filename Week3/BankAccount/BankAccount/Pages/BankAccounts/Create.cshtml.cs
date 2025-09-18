@@ -26,7 +26,7 @@ namespace BankAccount.Pages.BankAccounts
         }
 
         [BindProperty]
-        public BankAccount BankAccount { get; set; } = default!;
+        public Models.BankAccount BankAccount { get; set; } = default!;
 
         // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
