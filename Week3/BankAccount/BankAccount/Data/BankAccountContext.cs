@@ -15,5 +15,6 @@ namespace BankAccount.Data
         }
 
         public DbSet<BankAccount.Models.AccountHolder> AccountHolder { get; set; } = default!;
+        public DbSet<BankAccount.Models.BankAccount> BankAccount { get; set; } = default!;
     }
 }
