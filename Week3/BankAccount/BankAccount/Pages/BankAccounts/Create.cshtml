@@ -25,21 +25,24 @@
             </div>
             <div class="form-group">
                 <label asp-for="BankAccount.Balance" class="control-label"></label>
-                <input asp-for="BankAccount.Balance" class="form-control" />
+                <input asp-for="BankAccount.Balance" type="number" step="0.01" class="form-control" />
                 <span asp-validation-for="BankAccount.Balance" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="BankAccount.DateOpened" class="control-label"></label>
-                <input asp-for="BankAccount.DateOpened" class="form-control" />
+                <input asp-for="BankAccount.DateOpened" type="date" class="form-control" />
                 <span asp-validation-for="BankAccount.DateOpened" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="BankAccount.AccountHolderId" class="control-label"></label>
-                <select asp-for="BankAccount.AccountHolderId" class ="form-control" asp-items="ViewBag.AccountHolderId"></select>
+                <select asp-for="BankAccount.AccountHolderId"
+                        class="form-control"
+                        asp-items="ViewBag.AccountHolderId"></select>
+                <span asp-validation-for="BankAccount.AccountHolderId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
+            </div>           
         </form>
     </div>
 </div>

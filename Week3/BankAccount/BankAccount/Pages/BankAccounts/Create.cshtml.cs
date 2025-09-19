@@ -21,12 +21,12 @@ namespace BankAccount.Pages.BankAccounts
 
         public IActionResult OnGet()
         {
-        ViewData["AccountHolderId"] = new SelectList(_context.AccountHolder, "AccountHolderId", "AccountHolderId");
+            ViewData["AccountHolderId"] = new SelectList(_context.AccountHolder, "AccountHolderId", "FullName");
             return Page();
         }
 
         [BindProperty]
-        public Models.BankAccount BankAccount { get; set; } = default!;
+        public BankAccount.Models.BankAccount BankAccount { get; set; } = default!;
 
         // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()

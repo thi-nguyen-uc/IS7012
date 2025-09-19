@@ -8,7 +8,7 @@
         public decimal Balance { get; set; }
         public DateTime DateOpened { get; set; }
         public int AccountHolderId { get; set; }
-        public AccountHolder AccountHolder { get; set; }
+        public AccountHolder? AccountHolder { get; set; }
     }
     
 }
