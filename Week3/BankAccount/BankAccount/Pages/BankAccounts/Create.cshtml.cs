@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using BankAccount.Data;
 using BankAccount.Models;
 
-namespace BankAccount.Pages.AccountHolders
+namespace BankAccount.Pages.BankAccounts
 {
     public class CreateModel : PageModel
     {
@@ -21,11 +21,12 @@ namespace BankAccount.Pages.AccountHolders
 
         public IActionResult OnGet()
         {
+            ViewData["AccountHolderId"] = new SelectList(_context.AccountHolder, "AccountHolderId", "FullName");
             return Page();
         }
 
         [BindProperty]
-        public Models.AccountHolder AccountHolder { get; set; } = default!;
+        public BankAccount.Models.BankAccount BankAccount { get; set; } = default!;
 
         // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
@@ -35,7 +36,7 @@ namespace BankAccount.Pages.AccountHolders
                 return Page();
             }
 
-            _context.AccountHolder.Add(AccountHolder);
+            _context.BankAccount.Add(BankAccount);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");
