@@ -44,10 +44,10 @@
                 @Html.DisplayFor(modelItem => item.Balance)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DateOpened)
+                @item.DateOpened.ToString("yyyy-MM-dd")
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.AccountHolder.AccountHolderId)
+                @item.AccountHolder?.FullName
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.BankAccountId">Edit</a> |

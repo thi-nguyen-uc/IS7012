@@ -34,13 +34,13 @@
             @Html.DisplayNameFor(model => model.BankAccount.DateOpened)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.BankAccount.DateOpened)
+            @Model.BankAccount.DateOpened.ToString("yyyy-MM-dd")
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.BankAccount.AccountHolder)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.BankAccount.AccountHolder.AccountHolderId)
+            @Model.BankAccount.AccountHolder?.FullName
         </dd>
     </dl>
     
