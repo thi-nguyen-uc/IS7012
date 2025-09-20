@@ -30,10 +30,10 @@
             @Html.DisplayFor(model => model.AccountHolder.DateOfBirth)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.AccountHolder.Email)
+            @Html.DisplayNameFor(model => model.AccountHolder.SSN)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.AccountHolder.Email)
+            @Html.DisplayFor(model => model.AccountHolder.SSN)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.AccountHolder.PhoneNumber)
@@ -42,6 +42,41 @@
             @Html.DisplayFor(model => model.AccountHolder.PhoneNumber)
         </dd>
     </dl>
+    <h4>Bank Accounts</h4>
+    @if (Model.AccountHolder.BankAccounts != null && Model.AccountHolder.BankAccounts.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Account Number</th>
+                    <th>Account Name</th>
+                    <th>Balance</th>
+                    <th>Date Opened</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var account in Model.AccountHolder.BankAccounts)
+                {
+                    <tr>
+                        <td>@account.AccountNumber</td>
+                        <td>@account.AccountName</td>
+                        <td>@account.Balance.ToString("C")</td>
+                        <td>@account.DateOpened.ToString("yyyy-MM-dd")</td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"><strong>Total Accounts:</strong> @Model.AccountHolder.BankAccounts.Count</td>
+                    <td colspan="2"><strong>Total Balance:</strong> @Model.AccountHolder.BankAccounts.Sum(a => a.Balance).ToString("C")</td>
+                </tr>
+            </tfoot>
+        </table>
+    }
+    else
+    {
+        <p>This account holder has no bank accounts.</p>
+    }
 </div>
 <div>
     <a asp-page="./Edit" asp-route-id="@Model.AccountHolder.AccountHolderId">Edit</a> |

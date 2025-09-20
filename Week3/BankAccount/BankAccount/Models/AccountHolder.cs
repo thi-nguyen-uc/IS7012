@@ -12,8 +12,11 @@ namespace BankAccount.Models
         [Display(Name = "Date of Birth")]
         [DataType(DataType.Date)]
         public DateTime? DateOfBirth { get; set; }
-        public string Email { get; set; }
-        [Display(Name = "Phone Number")]
+
+        [Required]
+        [RegularExpression(@"^\d{3}-\d{2}-\d{4}$",
+            ErrorMessage = "SSN must be in the format ###-##-####")]
+        public string SSN { get; set; }
         public string PhoneNumber { get; set; }
         public List<BankAccount>? BankAccounts { get; set; }
         [Display(Name = "Full Name")]
