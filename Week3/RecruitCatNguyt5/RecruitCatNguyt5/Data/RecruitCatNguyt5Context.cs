@@ -15,5 +15,8 @@ namespace RecruitCatNguyt5.Data
         }
 
         public DbSet<RecruitCatNguyt5.Models.Candidate> Candidate { get; set; } = default!;
+        public DbSet<RecruitCatNguyt5.Models.Company> Company { get; set; } = default!;
+        public DbSet<RecruitCatNguyt5.Models.Industry> Industry { get; set; } = default!;
+        public DbSet<RecruitCatNguyt5.Models.JobTitle> JobTitle { get; set; } = default!;
     }
 }
