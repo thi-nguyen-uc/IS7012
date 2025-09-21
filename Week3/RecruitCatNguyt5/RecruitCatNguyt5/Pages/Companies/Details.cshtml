@@ -63,9 +63,44 @@
             @Html.DisplayNameFor(model => model.Company.Industry)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Company.Industry.Id)
+            @Html.DisplayFor(model => model.Company.Industry.Name)
         </dd>
     </dl>
+    <h4>Candidates</h4>
+    @if (@Model.Company.Candidates != null && @Model.Company.Candidates.Any())
+    {
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Target Salary</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Job Title</th>
+                    <th>Industry</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var candidate in @Model.Company.Candidates)
+                {
+                    <tr>
+                        <td>@candidate.FirstName</td>
+                        <td>@candidate.LastName</td>
+                        <td>@candidate.TargetSalary.ToString("C")</td>
+                        <td>@candidate.Email</td>
+                        <td>@candidate.PhoneNumber</td>
+                        <td>@candidate.JobTitle?.Title</td>
+                        <td>@candidate.Industry?.Name</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No candidates associated with this company.</p>
+    }
 </div>
 <div>
     <a asp-page="./Edit" asp-route-id="@Model.Company.Id">Edit</a> |

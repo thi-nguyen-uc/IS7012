@@ -28,7 +28,14 @@ namespace RecruitCatNguyt5.Pages.Companies
                 return NotFound();
             }
 
-            var company = await _context.Company.FirstOrDefaultAsync(m => m.Id == id);
+            var company = await _context.Company
+                    .Include(c => c.Industry) 
+                    .Include(c => c.Candidates)
+                        .ThenInclude(c => c.JobTitle)
+                    .Include(c => c.Candidates)
+                        .ThenInclude(c => c.Industry)
+                    .FirstOrDefaultAsync(c => c.Id == id);
+
             if (company == null)
             {
                 return NotFound();
