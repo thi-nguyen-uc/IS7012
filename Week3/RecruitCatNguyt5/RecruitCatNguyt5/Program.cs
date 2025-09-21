@@ -1,7 +1,12 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using RecruitCatNguyt5.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<RecruitCatNguyt5Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("RecruitCatNguyt5Context") ?? throw new InvalidOperationException("Connection string 'RecruitCatNguyt5Context' not found.")));
 
 var app = builder.Build();
 
