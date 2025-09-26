@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MovieSystem.Models;
 
 namespace MovieSystem.Data;
 
@@ -18,4 +19,6 @@ public class MovieSystemContext : IdentityDbContext<IdentityUser>
         // For example, you can rename the ASP.NET Identity table names and more.
         // Add your customizations after calling base.OnModelCreating(builder);
     }
+
+public DbSet<MovieSystem.Models.Movie> Movie { get; set; } = default!;
 }
