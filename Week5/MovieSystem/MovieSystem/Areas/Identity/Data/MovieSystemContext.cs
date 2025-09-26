@@ -21,4 +21,6 @@ public class MovieSystemContext : IdentityDbContext<IdentityUser>
     }
 
 public DbSet<MovieSystem.Models.Movie> Movie { get; set; } = default!;
+
+public DbSet<MovieSystem.Models.Director> Director { get; set; } = default!;
 }
