@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using MovieSystem.Data;
+using MovieSystem.Models;
+
+namespace MovieSystem.Pages.Movies
+{
+    public class CreateModel : PageModel
+    {
+        private readonly MovieSystem.Data.MovieSystemContext _context;
+
+        public CreateModel(MovieSystem.Data.MovieSystemContext context)
+        {
+            _context = context;
+        }
+
+        public IActionResult OnGet()
+        {
+        ViewData["DirectorId"] = new SelectList(_context.Set<Director>(), "Id", "Id");
+            return Page();
+        }
+
+        [BindProperty]
+        public Movie Movie { get; set; } = default!;
+
+        // For more information, see https://aka.ms/RazorPagesCRUD.
+        public async Task<IActionResult> OnPostAsync()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            _context.Movie.Add(Movie);
+            await _context.SaveChangesAsync();
+
+            return RedirectToPage("./Index");
+        }
+    }
+}
