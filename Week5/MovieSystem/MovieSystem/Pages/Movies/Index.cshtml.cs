@@ -12,18 +12,30 @@ namespace MovieSystem.Pages.Movies
 {
     public class IndexModel : PageModel
     {
-        private readonly MovieSystem.Data.MovieSystemContext _context;
+        private readonly MovieSystemContext _context;
 
-        public IndexModel(MovieSystem.Data.MovieSystemContext context)
+        public IndexModel(MovieSystemContext context)
         {
             _context = context;
         }
 
-        public IList<Movie> Movie { get;set; } = default!;
+        public IList<Movie> Movie { get; set; } = default!;
+
+        // Bind property to get search query from URL
+        [BindProperty(SupportsGet = true)]
+        public string? SearchString { get; set; }
 
         public async Task OnGetAsync()
         {
-            Movie = await _context.Movie.ToListAsync();
+            var moviesQuery = from m in _context.Movie
+                              select m;
+
+            if (!string.IsNullOrEmpty(SearchString))
+            {
+                moviesQuery = moviesQuery.Where(m => m.Title.Contains(SearchString));
+            }
+
+            Movie = await moviesQuery.ToListAsync();
         }
     }
 }
