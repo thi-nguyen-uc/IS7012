@@ -36,7 +36,6 @@ namespace MovieSystem.Pages.Movies
                 return NotFound();
             }
             Movie = movie;
-           ViewData["DirectorId"] = new SelectList(_context.Set<Director>(), "Id", "Id");
             return Page();
         }
 

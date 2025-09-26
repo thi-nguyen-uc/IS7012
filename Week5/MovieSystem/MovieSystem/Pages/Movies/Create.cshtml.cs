@@ -21,7 +21,6 @@ namespace MovieSystem.Pages.Movies
 
         public IActionResult OnGet()
         {
-        ViewData["DirectorId"] = new SelectList(_context.Set<Director>(), "Id", "Id");
             return Page();
         }
 
