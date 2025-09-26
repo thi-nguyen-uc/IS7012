@@ -23,8 +23,7 @@ namespace MovieSystem.Pages.Movies
 
         public async Task OnGetAsync()
         {
-            Movie = await _context.Movie
-                .Include(m => m.Director).ToListAsync();
+            Movie = await _context.Movie.ToListAsync();
         }
     }
 }
