@@ -17,5 +17,6 @@ namespace EventManagement.Data
         public DbSet<EventManagement.Models.Event> Events { get; set; } = default!;
         public DbSet<EventManagement.Models.Organizer> Organizers { get; set; } = default!;
         public DbSet<EventManagement.Models.User> Users { get; set; } = default!;
+        public DbSet<EventManagement.Models.Registration> Registration { get; set; } = default!;
     }
 }
